@@ -1,0 +1,198 @@
+---
+title: "Practice Problems 2"
+author: "STUDENT NAME"
+date: now
+date-format: "YYYY-MM-DDTHH:mm:ssZ"
+format:
+  html:
+    toc: true
+    toc-depth: 2
+    embed-resources: true
+    code-tools: true
+---
+
+
+```{r setup}
+#| include: false
+
+# Do NOT modify this chunk
+knitr::opts_chunk$set(
+  collapse = TRUE, 
+  warning = FALSE,
+  message = FALSE,
+  fig.height = 2.75, 
+  fig.width = 4.25,
+  fig.env = 'figure',
+  fig.pos = 'h',
+  fig.align = 'center')
+```
+
+# Purpose
+
+The goal of this set of practice problems is to practice the following skills:
+
+- Model evaluation: Is the model "correct"? Is the model "strong"? Is the model "fair"?
+- Making and interpreting residual plots
+
+
+
+# Directions
+
+1. Create a code chunk in which you load the `ggplot2`, `dplyr`, and `readr` packages. Include the following command in the code chunk to read in the data: `enroll <- read_csv("https://mac-stat.github.io/data/school_enrollment.csv")`
+
+2. Continue with the exercises below. You will need to create new code chunks to construct visualizations and models and write interpretations beneath. Put text responses in blockquotes as shown below:
+
+> Response here. (The > at the start of the line starts a blockquote and makes the text larger and easier to read.)
+
+3. Render your work for submission:
+    - Click the "Render" button in the menu bar for this pane (blue arrow pointing right). This will create an HTML file containing all of the directions, code, and responses from this activity. A preview of the HTML will appear in the browser.
+    - Scroll through and inspect the document to check that your work translated to the HTML format correctly.
+    - Close the browser tab.
+    - Go to the "Background Jobs" pane in RStudio and click the Stop button to end the rendering process.
+    - Locate the rendered HTML file in the folder where this file is saved. Open the HTML to ensure that your work looks as it should (code appears, output displays, interpretations appear). Upload this HTML file to Moodle.
+
+
+
+# Exercises
+
+## Context
+
+In the following exercises, we'll work with data from the World Bank on secondary school enrollment. 
+
+We have access to the following information:
+
+- `Country`: country name
+- `Year`: year enrollment was measured (ranges from 2004 - 2019)
+- `GER`: gross enrollment rate in secondary school (%)
+- `NER`: net enrollment rate in secondary school (%)
+
+Net enrollment rate (NER) is the ratio of children who are *of secondary school age* who are enrolled in secondary school, out of the total number of children of secondary school age. In contrast, gross enrollment rate (GER) is the ratio of children who are enrolled in secondary school *regardless of age*, out of the total number of children of secondary school age. NER ranges from 0 to 100%, since it is a true proportion, while GER can exceed 100% (some children who are *not* of secondary school age may in fact be enrolled).
+
+Historically, NER is more difficult to measure than GER (particularly in low- and middle-income countries), since it requires knowledge of the age of the children enrolled in school. 
+
+A relevant research question is: If we know GER, can we accurately predict NER? In order to answer this question, we first want to better understand the relationship between GER and NER.
+
+
+
+These practice problems are inspired by a [recent paper](https://arxiv.org/pdf/2401.01872) that aims to develop statistical methods for analyzing this problem. The methods described in this paper are beyond the scope of this course, but we link it here in case you are interested in learning more!
+
+
+
+## Exercise 1: Data drill
+
+Complete each task below using the `tidyverse` functions (e.g. `filter()`, `summarize()`, `select()`, `ggplot()`).
+
+```{r}
+# Construct a visualization of the NER values from 2019, the most recent year in the dataset
+# This plot should have just 1 variable (NER)!
+
+
+# Calculate the minimum, median, and maximum NER value in 2019
+# HINT: Try your code 1 line at a time instead of trying to write it all at once
+
+
+# Show the data on Nepal
+# Only keep the County, Year, and NER variables
+# NOTE: the result should have 5 rows and 3 columns
+
+
+# Plot NER over time (Year) in Nepal
+# Year should go on the x-axis!!
+# HINT: You'll need to do both data wrangling & visualization
+
+
+```
+
+## Exercise 2: Visual and numerical summaries
+
+### Part a
+
+Construct an appropriate visualization of the `GER` and `NER` variables (`NER` should be the dependent variable in your visualization). Add both a curved and linear trend line to your plot. Based on this visualization, do you think a linear regression model would correctly explain the relationship between NER and GER? Explain why or why not.
+
+### Part b
+
+Calculate and report the correlation between GER and NER. Do you think correlation is an appropriate numerical summary for the relationship between GER and NER? Explain why or why not (you may make reference to your answer to Part a, if relevant).
+
+## Exercise 3: Fitting a simple linear regression model
+
+### Part a 
+
+Suppose we decide to go ahead and fit a linear regression model, with GER as our predictor and NER as our outcome. Fill in the model statement below that corresponds to this regression. Use proper notation using $\beta_?$ terms. Don't yet plug in any numbers!
+
+E[___ | ___] = ...
+
+### Part b
+
+Fit the linear regression model that you wrote above, *and* report a model summary table.
+Be sure to store your model because you'll use it below.
+
+
+## Exercise 4: Model Eval: "Correct" and "Fair"
+
+### Part a
+
+Make a **residual plot** of residuals vs. fitted values for the model you fit in Exercise 3. Does this diagnostic plot suggest that your model is *wrong*? Explain why or why not.
+
+### Part b
+
+Do you think this model is "fair"? Explain your reasoning. NOTE: There's not a single "best" answer here. Utilize critical thinking skills and context.
+
+## Exercise 5: Model Eval: "Strong"
+
+Report and interpret, in context, the multiple $R^2$ value from the linear regression model you fit in Exercise 3. Your answer should demonstrate your understanding of how to *interpret* this number (what it actually *means* or *measures*) and of whether it indicates that this particular model is strong, moderate, or weak.
+
+## OPTIONAL Exercise 6: Thinking about transformations
+
+**NOTE: This exercise will not be graded. However, you're encouraged to try it!**
+
+### Part a
+
+Currently in the data, NER is reported on a scale from 0 - 100. How would the slope in your model change (if at all) from Exercise 3 if NER were transformed to be on a scale from 0-1? How would the intercept in your model change (if at all) from Exercise 3 if NER were transformed to be on a scale from 0-1? **If it helps you think it through, mutate NER and fit this model!**
+
+### Part b
+
+Suppose I want the intercept of my model of NER by GER to have the interpretation of the expected average NER for a GER of 80%. Suggest a transformation I could make to one or both of these variables that would give the intercept of my linear regression model this interpretation.
+
+
+
+
+# Disclosures & citations
+
+In this final section, please share whether you worked with others on this PP, whether you attended office hours to discuss this PP, and whether and how you used AI.
+This is here to both help *you* reflect on your approach to learning / assignment completion, and to help the *instructor / preceptors* understand what resources are being utilized.
+
+## Working with others
+
+You're encouraged to work with others on PPs, though all submitted work must be in your own words / code and you must be able to explain everything therein.
+Did you discuss this PP / work on this PP with any other STAT 155 students?
+If so, include their name(s) here.
+NOTE: No worries if you put somebody's name and they don't put yours, or vice versa.
+
+**Your response:**
+
+## Attending office hours
+
+Did you attend any office hours to get help on / discuss this PP?
+If so, include the name of the preceptor or instructor whose office hours you attended and roughly how much time you spent in office hours.
+
+**Your response:**
+
+## AI
+
+You're encouraged to AVOID the use of AI and to NEVER use it as your first approach to an exercise.
+Learning comes from you doing the puzzling, not from you producing a correct answer.
+Did you use AI for any part of this PP?
+If so, describe: where you used it (on which exercises), how long you worked on the exercises before turning to AI, and what prompts you used / typed into AI.
+
+**Your response:**
+
+
+
+
+
+
+
+
+
+
+

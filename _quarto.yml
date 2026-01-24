@@ -1,0 +1,61 @@
+project:
+  type: website
+  output-dir: docs
+  render:
+    - "*.qmd"
+    - "!activity_templates/"
+    - "!assignments/"
+    - "!working/"
+  post-render: "cp -r activities docs/activity_templates" # adds activity qmd as downloadable template
+  resources:
+    - "data/*.csv"
+    # - "activity_templates/*.qmd"
+    - "assignments/*.qmd"
+    - .nojekyll
+
+website:
+  title: "STAT 155"
+  site-url: https://mutasim221B.github.io/Mutasim-Personal-Course/
+  repo-url:  https://github.com/mutasim221b/Mutasim-Personal-Course
+  favicon: favicon-32x32.png
+  navbar:
+    background: primary
+    search: true
+    left:
+      - file: index.qmd
+        text: "Home"
+      - file: syllabus.qmd
+        text: "Syllabus"
+      - file: schedule.qmd
+        text: "Schedule"
+      - sidebar:activities
+      - file: assignments.qmd
+        text: "Practice Problems"
+      - file: project.qmd
+        text: "Project"
+      - file: R_Resources.qmd
+        text: "R Resources"
+
+  sidebar:
+    - id: activities
+      title: "Activities"
+      contents:
+          - "activities/01_foundations_welcome.qmd"
+
+
+  
+  page-footer:
+    left: |
+      &copy; Md Mutasim Billah, 2026<br>
+      All content licensed under ![](https://static.thenounproject.com/png/70967-200.png){height=20px} ([CC BY-NC-SA 4.0](http://creativecommons.org/licenses/by-nc-sa/4.0/))
+    right: |
+      Site built with [Quarto](https://quarto.org/)
+
+format:
+  html:
+    theme: sandstone
+    # css: styles.css
+    toc: true      
+    code-overflow: wrap
+
+editor: source

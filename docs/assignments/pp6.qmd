@@ -1,0 +1,265 @@
+---
+title: "Practice Problems 6"
+author: "STUDENT NAME"
+date: now
+date-format: "YYYY-MM-DDTHH:mm:ssZ"
+format:
+  html:
+    toc: true
+    toc-depth: 2
+    embed-resources: true
+    code-tools: true 
+    df-print: paged
+---
+
+<center>
+**Due Friday, 11/14 at 5pm on Moodle.**
+</center>
+
+# Purpose
+
+The goal of this set of practice problems is to practice the following skills:
+
+- Recognize the difference between a **population parameter** and a **sample estimate**.
+- Demonstrate understanding of properties of the Normal probability model
+- Connect the *ideas* of randomness, sampling distributions, bootstrapping, the Central Limit Theorem, sample size, and standard error 
+- Identify the difference between *sampling* and *resampling*
+
+
+# Directions
+
+1. Create a code chunk in which you load the `ggplot2`, `dplyr`, `broom`, `mosaicData`, and `readr` packages. The data for this assignment comes from the `mosaicData` package in R. To read it in, you will need to run the code `data(Whickham)`.
+
+2. Continue with the exercises below. You will need to create new code chunks to construct visualizations and models and write interpretations beneath. Put text responses in blockquotes as shown below:
+
+> Response here. (The > at the start of the line starts a blockquote and makes the text larger and easier to read.)
+
+3. Render your work for submission:
+    - Click the "Render" button in the menu bar for this pane (blue arrow pointing right). This will create an HTML file containing all of the directions, code, and responses from this activity. A preview of the HTML will appear in the browser.
+    - Scroll through and inspect the document to check that your work translated to the HTML format correctly.
+    - Close the browser tab.
+    - Go to the "Background Jobs" pane in RStudio and click the Stop button to end the rendering process.
+    - Locate the rendered HTML file in the folder where this file is saved. Open the HTML to ensure that your work looks as it should (code appears, output displays, interpretations appear). Upload this HTML file to Moodle.
+
+
+
+# Exercises
+
+## Context:
+
+In the following exercises, we'll work with data from a one-in-six survey of the electoral roll in Whickham, a mixed urban and rural district near Newcastle upon Tyne, in the UK. The survey was conducted in 1972-1974 to study heart disease and thyroid disease. A follow-up on those in the survey was conducted twenty years later.
+
+We have access to the following information, for 1314 women:
+
+- `outcome`: survival status after twenty years (Alive or Dead)
+- `smoker`: smoking status at baseline (No or Yes)
+- `age`: age (in years) at the time of the first survey
+
+We'll use this data to explore sampling distributions, properties of Normal distributions, and more. The main research question we'll explore is whether the odds of mortality in 20 years varies between smokers and non-smokers.
+
+## Exercise 1: Parameter vs. Estimate
+
+### Part a
+
+Before digging into the data, think about the context of our research question.
+In one sentence, describe what the *population parameter* of interest is.
+HINT: It's an *odds ratio*, but which one?!?
+
+
+> Population parameter:
+
+### Part b
+
+Fill in the code below to obtain a table of counts of `outcome` by `smoking` status.
+NOTE: Just use one of the approaches below (whichever you're more comfortable with), and delete the other chunk.
+
+```{r}
+___ %>% 
+  ___(outcome, smoker)
+```
+
+
+```{r}
+library(janitor)
+___ %>% 
+  ___(outcome, smoker) %>% 
+  adorn_totals(c("row", "col"))
+```
+
+
+### Part c
+
+Using only the table from Part b (not building a model), provide a **sample estimate** of the population parameter of interest.
+Include any code you need to answer this question in the code chunk below (remember, R is a calculator!)
+
+```{r}
+# Add your R code here!
+```
+
+
+### Part d
+
+Rather than calculate the observed odds ratio by hand, we can obtain it using a simple logistic regression model with `outcome` as the outcome (hah!) amd `smoker` as our predictor of interest.
+Build this model and confirm that the *exponentiated* `smokerYES` coefficient is equivalent to your odds ratio calculation in Part c.
+
+```{r}
+
+```
+
+
+
+## Exercise 2: Resampling
+
+### Part a
+
+How wrong might our sample estimates be?!
+Report the approximate **standard error** of the `smokerYES` coefficient (on the original log(odds) scale) that was reported in your model summary table in Exercise 1 Part d.
+NOTE: This was calculated via a complicated formula!
+
+> Your response here
+
+
+### Part b
+
+Suppose we instead wanted to estimate the standard error of the sample `smokerYES` coefficient using *bootstrapping*, i.e. using simulation instead of a complicated formula!
+Fill in the code below to draw 500 re-samples from the `Whickham` dataset.
+
+```{r}
+# Set the seed so that we all get the same results
+set.seed(155)
+
+# Store the sample models
+sample_coefs <- mosaic::do(___)*( # What number should go here?
+  Whickham %>%
+    sample_n(size = ___, replace = TRUE) %>% # What number should go here?
+    with(glm(___ ~ ___, family = binomial)) # What variables should go here?
+)
+
+# Rename log odds ratio so it's easier to find
+sample_coefs <- sample_coefs %>%
+  mutate(logOR = smokerYes)
+```
+
+### Part b
+
+Explain in 1-2 sentences why we need to sample from our data **with replacement** when doing bootstrapping.
+HINT: You've done something similar in an activity!
+
+> Your response here
+
+## Exercise 3: Sampling distributions
+
+NOTE: For brevity from here on out, we'll refer to the `smokerYES` coefficient as the "log odds ratio".
+The bootstrap estimates of this coefficient are stored as `logOR` in the `sample_coefs` results.
+
+### Part a
+
+If we were to make a histogram or density plot of the 500 re-sampled log odds ratio estimates, what shape do you anticipate it to take? Around what value do you expect it to be centered?
+
+### Part b
+
+Make the plot you described in part a! What do you observe? Were your "hypotheses" correct?
+
+### Part c
+
+Visually approximate the range of the middle 50% of the 500 re-sampled log odds ratios. Add 2 vertical lines to your histogram using `geom_vline(xintercept = ___)` to reflect this range.
+
+### Part d
+
+Visually approximate the range of the middle 80% of the 500 re-sampled log odds ratios. Report this range of values and explain why this range is **necessarily** larger than the range that contains the middle 50%.
+
+
+## Exercise 4: Properties of Normal distributions and Standard Errors
+
+### Part a
+
+Using your bootstrap results, estimate and report the standard error of the log odds ratio estimate.
+
+### Part b
+
+How does your bootstrap standard error estimate in Part a compare to the one you obtained, via a complicated formula, in Exercise 2 Part a?
+
+
+
+## Exercise 5: Multiple logistic regression
+
+### Part a
+
+Fit a multiple logistic regression model that models mortality (`outcome`) as a function of both smoking status and age. (Don't include an interaction term between the 2 predictors.)
+
+
+### Part b
+
+Interpret all 3 exponentiated coefficients. Explain if the intercept is meaningful in this context.
+
+
+## Exercise 6: Model evaluation
+
+
+### Part a
+
+Construct a boxplot of predicted probabilities in those who were alive and in those who died in the 20 year time span. 
+Use this to discuss how well our model separates our 2 outcome groups based on their smoking status and age.
+
+
+### Part b
+
+Suppose we used the multiple logistic regression model to predict a person's outcome *using a probability threshold of 0.375*.
+Obtain a *confusion matrix* or a table of counts that will help us evaluate the quality of these predictions.
+
+### Part c
+
+Using your confusion matrix, compute the (overall) accuracy, sensitivity, and specificity of the multiple logistic regression model *using a probability threshold of 0.375*. Show your work for the calculations.
+
+```{r}
+# Overall accuracy
+
+```
+
+```{r}
+# Sensitivity
+
+```
+
+```{r}
+# Specificity
+
+```
+
+
+# Disclosures & citations
+
+In this final section, please share whether you worked with others on this PP, whether you attended office hours to discuss this PP, and whether and how you used AI.
+This is here to both help *you* reflect on your approach to learning / assignment completion, and to help the *instructor / preceptors* understand what resources are being utilized.
+
+## Working with others
+
+You're encouraged to work with others on PPs, though all submitted work must be in your own words / code and you must be able to explain everything therein.
+Did you discuss this PP / work on this PP with any other STAT 155 students?
+If so, include their name(s) here.
+NOTE: No worries if you put somebody's name and they don't put yours, or vice versa.
+
+**Your response:**
+
+## Attending office hours
+
+Did you attend any office hours to get help on / discuss this PP?
+If so, include the name of the preceptor or instructor whose office hours you attended and roughly how much time you spent in office hours.
+
+**Your response:**
+
+## AI
+
+You're encouraged to AVOID the use of AI and to NEVER use it as your first approach to an exercise.
+Learning comes from you doing the puzzling, not from you producing a correct answer.
+Did you use AI for any part of this PP?
+If so, describe: where you used it (on which exercises), how long you worked on the exercises before turning to AI, and what prompts you used / typed into AI.
+
+**Your response:**
+
+
+
+
+
+
+

@@ -1,0 +1,55 @@
+---
+title: "R and RStudio Resources"
+sidebar: false
+---
+
+## Getting Help
+
+- [Crowd-sourced R functions](https://docs.google.com/document/d/1ziidS98vvWUepaV5NypuPvLuko6rxBdm/edit#heading=h.m021w4b7p4ld)
+- [Interactive RStudio tutorials](https://posit.cloud/learn/recipes>) (R basics, data viz, and more)
+- [Markdown (Quarto) basics](https://quarto.org/docs/authoring/markdown-basics.html), and [Quarto/RStudio tutorial](https://quarto.org/docs/get-started/hello/rstudio.html)
+- [RStudio cheatsheets](https://posit.co/resources/cheatsheets/)
+- **Google it!** If you have a question about R, someone else probably asked it. Add **“R tidyverse”** to your search term.  
+  Example: *scatterplot R tidyverse*
+- **Note about ChatGPT for code**: Please avoid using ChatGPT as a first resort for R code. It often suggests overly wordy or unfamiliar approaches. Our goal is for you to understand the code you write; sticking to tools and syntax we use in class will support your learning best.
+
+---
+
+## Getting Started
+
+The videos below introduce R and RStudio and show how to install them on your computer. Start with the overview, then watch the step-by-step video for your operating system.
+
+**Download links (mentioned in the videos):**
+- R: <http://cran.r-project.org/>
+- RStudio: <https://www.rstudio.com/products/rstudio/download/#download>
+
+::: {.callout-warning}
+### Important
+Version numbers in the videos are out-of-date. Please download the *latest* versions of both R and RStudio. As of August 25, 2025, the latest versions are: R **4.5.1** and RStudio **2025.05.1+513**.  
+:::
+
+### Installation / Overview
+- [Installing R and RStudio (Overview)](https://macalester.voicethread.com/myvoice/thread/14887343/92882995/114212168) *(Length: 4:30)*
+
+**Pick one of the following:**
+- **Mac** — [Installing R and RStudio Step-by-Step](https://macalester.voicethread.com/myvoice/thread/14888052/92891524/85083698) *(Length: 3:24)*
+- **Windows** — [Installing R and RStudio Step-by-Step](https://macalester.voicethread.com/myvoice/thread/14888016/92890901/100587959) *(Length: 5:43)*
+
+If you run into installation issues, contact me right away. If we can’t get RStudio working locally, you can use Macalester’s online RStudio server:  
+Quick [intro video](https://macalester.voicethread.com/myvoice/thread/15290619/95572970)
+
+---
+
+## Intro Videos to R (watch in order)
+
+1. [Intro to R and RStudio](https://macalester.voicethread.com/myvoice/thread/14926835/93215217/100735614) *(11:31)*
+2. [R Data Types](https://macalester.voicethread.com/myvoice/thread/14892092/92922936) *(8:05)*
+3. [R Error Messages and Troubleshooting](https://macalester.voicethread.com/myvoice/thread/14892352/92925398) *(Optional)* *(7:52)*
+4. [Intro to RMarkdown / Quarto](https://macalester.voicethread.com/myvoice/thread/14926848/93215300) *(9:33)*
+5. **File Structure & Organization** *(Optional)*  
+   - [Mac](https://macalester.voicethread.com/myvoice/thread/14893131/92931979) *(5:13)*
+   - [Windows](https://macalester.voicethread.com/myvoice/thread/14927116/93217825/85339822) *(7:44)*
+6. [Tips on File Naming & Organization](https://djnavarro.net/slides-project-structure/#1) *(Optional)*
+7. [R Packages](https://macalester.voicethread.com/myvoice/thread/14893302/92933584) *(7:30)*
+
+> You can adjust video speed and pause as needed. If anything doesn’t work, please let me know so we can fix it quickly.

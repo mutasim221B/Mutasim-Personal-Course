@@ -1,0 +1,11 @@
+---
+title: "Project"
+sidebar: false
+---
+
+- Please download and go through the [Project Instructions](https://docs.google.com/document/d/1ovWVJdU3n236mFC0ib2mSU4rp7nMyPY2e9_HZ1WL7Kw/edit?usp=sharing) in details.
+
+- The Rubrics for grading are [here](https://docs.google.com/spreadsheets/d/1CdmPgh1Nq40-yZ3BTjtSsqqk8q3ESVPrhZ03Q3mteIw/edit?usp=sharing).
+
+- Participate in the [STAT 155 Group Project Survey](https://docs.google.com/forms/d/e/1FAIpQLSfqdQs_YbazAqUQ-84sU6RSDppgiZFbXCBPPEj0XNVpPUWL0Q/viewform?usp=dialog) by Monday, October 27.
+

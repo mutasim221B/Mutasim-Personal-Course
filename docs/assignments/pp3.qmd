@@ -1,0 +1,295 @@
+---
+title: "Practice Problems 3"
+author: "STUDENT NAME"
+date: now
+date-format: "YYYY-MM-DDTHH:mm:ssZ"
+format:
+  html:
+    toc: true
+    toc-depth: 2
+    embed-resources: true
+    code-tools: true
+---
+
+
+
+
+<center>
+**Due Friday, 10/10 at 11:59pm on Moodle.**
+</center>
+
+
+
+# Purpose
+
+The goal of this set of practice problems is to practice the following skills:
+
+- Building appropriate multiple linear regression models to address research questions
+- Interpreting linear regression model results with a mix of quantitative and categorical predictors
+
+
+
+
+# Directions
+
+1. Create a code chunk in which you load the `ggplot2`, `dplyr`, and `readr` packages. Include the following command in the code chunk to read in the data: `lifts <- read_csv("https://mac-stat.github.io/data/powerlifting.csv")`
+
+2. Continue with the exercises below. You will need to create new code chunks to construct visualizations and models and write interpretations beneath. Put text responses in blockquotes as shown below:
+
+> Response here. (The > at the start of the line starts a blockquote and makes the text larger and easier to read.)
+
+3. Render your work for submission:
+    - Click the "Render" button in the menu bar for this pane (blue arrow pointing right). This will create an HTML file containing all of the directions, code, and responses from this activity. A preview of the HTML will appear in the browser.
+    - Scroll through and inspect the document to check that your work translated to the HTML format correctly.
+    - Close the browser tab.
+    - Go to the "Background Jobs" pane in RStudio and click the Stop button to end the rendering process.
+    - Locate the rendered HTML file in the folder where this file is saved. Open the HTML to ensure that your work looks as it should (code appears, output displays, interpretations appear). Upload this HTML file to Moodle.
+
+
+
+# Exercises
+
+## Context 
+
+Powerlifting is a sport in which athletes compete to lift as much as possible in 3 events: bench press, squat, and deadlift.
+[Open Powerlifting](https://www.openpowerlifting.org/) maintains a database of competition results for powerlifters across the world.
+We have information on 100,000 lifters from this database.
+Check out the codebook [here](https://github.com/Mac-STAT/data/blob/main/powerlifting_codebook.md).
+
+
+
+
+**Research question:**
+
+Are lighter or heavier lifters proportionately stronger?
+
+
+
+**Variables of interest in this analysis:**
+
+- `TotalKg`: total amount that an athlete lifted across all 3 events (the squat, bench, and deadlift), in kilograms
+- `BodyweightKg`: the athlete's body weight, in kilograms
+- `Age`: the athlete's age, in years
+- `Sex`: the athlete's sex as recorded by Open Powerlifting, including `M` (male), `F` (female), and `Mx` (gender-neutral). These designations are [detailed here](https://openpowerlifting.gitlab.io/opl-csv/bulk-csv-docs.html))
+- `Equipment`: the type of equipment that an athlete used for their lifts (this may require some Googling!)
+
+
+
+\
+\
+
+
+
+## Exercise 1: Define outcome variable
+
+Though `TotalKg` measures the total weight that an athlete lifted across all 3 events, it doesn't account for an athlete's size (`BodyweightKg`).
+To calculate a competitor's relative strength, we can calculate their *strength-to-weight ratio* by dividing their `TotalKg` by their `BodyweightKg`.
+Specifically, this strength-to-weight ratio calculates how many times their body weight that an athlete can lift, thus higher numbers indicate higher relative strength.
+
+
+In your `lifts` data set, define and store a new variable called `SWR` that records the athletes' strength-to-weight ratios.
+
+```{r}
+# STEP 1: Create your new data set
+
+```
+
+
+After you've completed Step 1 above, address the 2 steps below to confirm that your results are correct, thus you're ready to move on and use this data:
+
+```{r}
+# STEP 2: Use R code to confirm that there are now 100000 rows and 22 columns in the new lifts data set
+
+
+```
+
+```{r}
+# STEP 3: Show the first 6 rows of lifts, including ONLY the Name and SWR variables
+# The first 6 SWR values should be 1.58, NA, 5.74, 2.37, 1.48, 1.82
+
+
+```
+
+
+
+## Exercise 2: Exploratory visualizations
+
+**Guiding question:**   
+How are age, sex, body weight, and equipment usage related to relative strength (SWR)?
+
+For each of these 4 explanatory variables, in parts a-d, do the following:
+
+- Construct a visualization of the relationship of `SWR` with this variable. Thus each visualization should include only *2* variables.
+- Write a 1-2 sentence summary of what you learn from the plot. Remember to discuss trend, variability/dispersion about the trend, and any notable outliers, *in context*.
+
+### Part a
+
+Complete the 2 steps above for the relationship of `SWR` with age.
+NOTE: Using `alpha = 0.1` inside your `geom` line will improve this visualization!
+
+**Put your plot here:**
+
+
+**Write your discussion here:**
+
+
+
+### Part b
+
+Complete the 2 steps above for the relationship of `SWR` with sex.
+
+**Put your plot here:**
+
+
+**Write your discussion here:**
+
+
+
+### Part c
+
+Complete the 2 steps above for the relationship of `SWR` with body weight.
+
+**Put your plot here:**
+
+
+**Write your discussion here:**
+
+
+### Part d
+
+Complete the 2 steps above for the relationship of `SWR` with equipment usage.
+
+**Put your plot here:**
+
+
+**Write your discussion here:**
+
+
+
+## Exercise 3: More exploratory visualizations
+
+Let's practice some visualizations with more than 2 variables.
+For each of the 3 sets of variables below, construct an appropriate visualization.
+Take mental note of what you observe, but no need to write out a discussion.
+
+```{r}
+# Plot 1: SWR vs BodyweightKg and Age
+
+```
+
+
+```{r}
+# Plot 2: SWR vs Sex and Equipment
+
+```
+
+```{r}
+# Plot 3: SWR vs BodyweightKg and Sex
+
+```
+
+
+
+## Exercise 4: Causal diagram
+
+We are interested in the relationship of `SWR` with `BodyweightKg`, but are concerned about `Age`, `Sex`, and `Equipment` as potential confounders.
+
+### Part a
+
+Draw a causal diagram that shows how these 5 variables might be related. Draw this by hand or software and save the file as `pp3_dag.jpg` or `pp3_dag.png` in the same folder as this `.qmd` file. You can then insert the diagram as below (delete whichever line you don't use):
+
+![](pp3_dag.jpg)
+![](pp3_dag.png)
+
+### Part b
+
+Construct some visualizations that explore whether `Age`, `Sex`, and `Equipment` have a relationship with `BodyweightKg` (ignore `SWR` in these visualizations!).
+
+
+### Part c
+
+Explain how your visualizations in Part b relate to your causal diagram.
+For example, what do these visualizations indicate about the various relationships under investigation and is this consistent with your original causal diagram?
+
+
+### Part d
+
+Identify another possible confounder that would be important to consider but is missing from our data set.
+
+
+
+## Exercise 5: Linear regression modeling
+
+**Guiding question:**   
+Are lighter or heavier lifters relatively stronger?
+Put another way, what's the causal effect of body weight on SWR?
+
+### Part a
+
+Fit an appropriate linear regression model that answers our *causal* research question, and include a summary table for this model.
+Make sure that the predictors used in your model are consistent with your causal diagram from Exercise 3.
+
+
+
+### Part b
+
+Interpret the ONE coefficient that answers the research question about whether lighter or heavier lifters are relatively stronger.
+*Remember: Use appropriate causation vs. association language, include units, talk about averages rather than individual cases, and interpret the coefficient in context.*
+
+
+
+
+
+## Exercise 6: More model interpretations
+
+Let's continue to dig into the messages from the model you built in Exercise 5.
+
+### Part a
+
+Interpret the intercept (and comment on whether the intercept is meaningful in this context).
+
+
+
+
+### Part b
+
+Interpret *2* of the remaining coefficients, at least *1* of which corresponds to a categorical predictor.
+
+
+
+
+
+# Disclosures & citations
+
+In this final section, please share whether you worked with others on this PP, whether you attended office hours to discuss this PP, and whether and how you used AI.
+This is here to both help *you* reflect on your approach to learning / assignment completion, and to help the *instructor / preceptors* understand what resources are being utilized.
+
+## Working with others
+
+You're encouraged to work with others on PPs, though all submitted work must be in your own words / code and you must be able to explain everything therein.
+Did you discuss this PP / work on this PP with any other STAT 155 students?
+If so, include their name(s) here.
+NOTE: No worries if you put somebody's name and they don't put yours, or vice versa.
+
+**Your response:**
+
+## Attending office hours
+
+Did you attend any office hours to get help on / discuss this PP?
+If so, include the name of the preceptor or instructor whose office hours you attended and roughly how much time you spent in office hours.
+
+**Your response:**
+
+## AI
+
+You're encouraged to AVOID the use of AI and to NEVER use it as your first approach to an exercise.
+Learning comes from you doing the puzzling, not from you producing a correct answer.
+Did you use AI for any part of this PP?
+If so, describe: where you used it (on which exercises), how long you worked on the exercises before turning to AI, and what prompts you used / typed into AI.
+
+**Your response:**
+
+
+
+
+

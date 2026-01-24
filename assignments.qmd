@@ -1,0 +1,18 @@
+---
+title: "Practice Problems"
+sidebar: false
+---
+
+
+Please review the [Practice Problems Policies](https://docs.google.com/document/d/1hBJRjNahudtKN2KYngWJvzVHhkzNH_eO/edit?usp=drive_link&ouid=100583608219387203178&rtpof=true&sd=true) document before proceeding!
+
+**...due at 11:59 pm Central on Moodle!**
+
+- [Practice Problems 1](assignments/pp1.qmd), due 9/12
+- [Practice Problems 2](assignments/pp2.qmd), due 9/20
+- [Practice Problems 3](assignments/pp3.qmd), due 10/10
+- [Practice Problems 4](assignments/pp4.qmd), due 10/15
+- [Practice Problems 5](assignments/pp5.qmd), due 10/25
+- [Practice Problems 6](assignments/pp6.qmd), due 11/14
+- [Practice Problems 7](assignments/pp7.qmd), due 11/21
+- [Practice Problems 8](assignments/pp8.qmd), due 12/06

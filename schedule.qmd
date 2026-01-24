@@ -1,0 +1,100 @@
+---
+title: "Course Schedule"
+sidebar: false
+---
+
+The (tentative) course schedule below will be filled in throughout the semester. For each day, there will be written on what is due ahead of class time OR whats' the big thing (like quizzes!). The “Announcements” column is (hopefully) self-explanatory. Any urgent announcements will be made over email (moodle).
+
+::: {.callout-note collapse="true" title="Week 1"}
+| Monday         | Wednesday | Friday | Announcements |
+|:---------------|:----------|:-------|:--------------|
+| Enjoy, no class | **09/03: First day of class! Collecting and Summarizing Data** <br><br> _Before class:_ <br> - Read the course [syllabus](syllabus.qmd). I will assume that you understand all course policies beginning on Wednesday! <br> - Familiarize yourself with Moodle and the course website <br> - Complete [Introductions Survey](https://forms.gle/YmwA3MqdHUKxNMam6) <br> - Walk through R Resources tab. Try downloading R and RStudio before coming to class! | **09/05: Univariate Visualization & Numerical Summaries** <br><br> _Before class:_ <br> - Download R and RStudio, and watch corresponding videos in the [R Resources](R_Resources.qmd) tab <br> - Complete the [Introductions Survey](https://forms.gle/YmwA3MqdHUKxNMam6) (if you haven’t already!) <br> - Do either the readings or videos for today’s activity (Links in the Moodle checkpoint quiz) <br> - Complete today’s checkpoint on Moodle <br><br> _During class:_ <br> - Begin Univariate Foundations Activity | Welcome (back) to campus! |
+:::
+
+::: {.callout-note collapse="true" title="Week 2"}
+| Monday | Wednesday | Friday | Announcements |
+|:-------|:----------|:-------|:--------------|
+| **09/08: Simple Linear Regression: Discovery** <br><br> _Before class:_ <br> - Finish Univariate Foundations Activity outside of class <br> - Look through the Study Tips & Slides page on the Course Website – set a plan for yourself to be successful this semester! <br> - No checkpoint on Moodle for today! <br><br> _During class:_ <br> - Begin SLR: Discovery Activity | **09/10: Simple Linear Regression: Formalization** <br><br> _Before class:_ <br> - Finish SLR: Discovery Activity outside of class <br> - Do either the readings or videos for today’s activity (Links in the Moodle checkpoint quiz) <br> - Complete today’s checkpoint on Moodle <br><br> _During class:_ <br> - Begin SLR: Formalization Activity | **09/12: Simple Linear Regression: Model Evaluation** <br><br> _Before class:_ <br> - Finish SLR: Formalization Activity outside of class <br> - Do either the readings or videos for today’s activity (Links in the Moodle checkpoint quiz) <br> - Complete today’s checkpoint on Moodle <br><br> _During class:_ <br> - Begin SLR: Model Evaluation Activity | - PP#1 is posted on the [Practice Problems](assignments.qmd) tab (due Friday 09/12, 11:59pm CT) <br> - Last day to add/drop is Friday, 09/12 |
+:::
+
+::: {.callout-note collapse="true" title="Week 3"}
+| Monday | Wednesday | Friday | Announcements |
+|:-------|:----------|:-------|:--------------|
+| **09/15: Simple Linear Regression: Transformation** <br><br> _Before class:_ <br> - Finish last class activities and CP Quiz on Moodles | **09/17: Simple Linear Regression: Categorcial Variable** <br><br> _Before class:_ <br> - Finish last class activities and CP Quiz on Moodles | **09/19: Mulitple Linear Regression Intro** <br><br> _Before class:_ <br> - Finish last class activities  | - PP#2 is posted on the [Practice Problems](assignments.qmd) tab (due Friday 09/20, 11:59pm CT) |
+:::
+
+
+::: {.callout-note collapse="true" title="Week 4"}
+| Monday | Wednesday | Friday | Announcements |
+|:-------|:----------|:-------|:--------------|
+| **09/22: Multiple Linear Regression: Discovery** <br><br> | **09/24: Quiz 01** | **09/26: Mulitple Linear Regression Discovery** |
+:::
+
+::: {.callout-note collapse="true" title="Week 5"}
+| Monday | Wednesday | Friday | Announcements |
+|:-------|:----------|:-------|:--------------|
+| **09/29: MLR principles** <br><br> _Before class:_ <br> - CP Quiz on Moodles | **10/01:  MLR principles + MLR confounding* <br><br> _Before class:_ <br> - CP Quiz on Moodle | **10/03: MLR confounding** | 
+:::
+
+
+::: {.callout-note collapse="true" title="Week 6"}
+| Monday | Wednesday | Friday | Announcements |
+|:-------|:----------|:-------|:--------------|
+| **10/06: MLR interaction** <br><br> _Before class:_ <br> - CP Quiz on Moodles | **10/08:  MLR interaction + MLR Model Building** <br><br> _Before class:_ <br> - CP Quiz on Moodle | **10/10: MLR Model Building** |  - PP#3 is posted on the [Practice Problems](assignments.qmd) tab (due Friday 10/10, 11:59pm CT) |
+:::
+
+
+::: {.callout-note collapse="true" title="Week 7"}
+| Monday | Wednesday | Friday | Announcements |
+|:-------|:----------|:-------|:--------------|
+| **10/13: Logistic Univariate** <br><br> _Before class:_ <br> - CP Quiz on Moodles | **10/15:  No class (Fall Break)** <br><br> - PP#4 is posted on the [Practice Problems](assignments.qmd) tab (due Wednesday 10/15 at 11:59pm CT) | **10/10: No class (Fall Break)** |
+:::
+
+
+::: {.callout-note collapse="true" title="Week 8"}
+| Monday | Wednesday | Friday | Announcements |
+|:-------|:----------|:-------|:--------------|
+| **10/20: Bill out of town (Fall break continues!)** <br><br> | **10/22: Multiple Logistic ** <br><br> _Before class:_ <br> - CP Quiz on Moodles | **10/24: Multiple Logistic + Review ** | - PP#5 is posted on the [Practice Problems](assignments.qmd) tab (due Saturday, Oct 25 at 11:59pm CT)|
+:::
+
+::: {.callout-note collapse="true" title="Week 9"}
+| Monday | Wednesday | Friday | Announcements |
+|:-------|:----------|:-------|:--------------|
+| **10/27: Review** <br><br> | **10/29: Quiz 02** | **10/31: Project Day**|
+:::
+
+::: {.callout-note collapse="true" title="Week 10"}
+| Monday | Wednesday | Friday | Announcements |
+|:-------|:----------|:-------|:--------------|
+| **11/03: Tools for inference (Sampling-Normal)** <br><br> _Before class:_ <br> - CP Quiz on Moodles| **11/05: Tools for inference (Sampling-Normal) + Sampling Dist+CTL+Bootsrap ** <br><br> _Before class:_ <br> - CP Quiz on Moodles | **11/07: Sampling Dist+CTL+Bootsrap ** | - Project Milestone 1 due on Friday, Nov 07 at 11:59pm CT|
+:::
+
+::: {.callout-note collapse="true" title="Week 11"}
+| Monday | Wednesday | Friday | Announcements |
+|:-------|:----------|:-------|:--------------|
+| **11/10: Confidence intervals** <br><br> _Before class:_ <br> - CP Quiz on Moodles| **11/12: Confidence intervals + Hypothesis testing discovery (single coefficient) ** | **11/14: Hypothesis testing discovery (single coefficient)** | - PP#6 is posted on the [Practice Problems](assignments.qmd) tab (due Friday, Nov 14 at 11:59pm CT)|
+:::
+
+::: {.callout-note collapse="true" title="Week 12"}
+| Monday | Wednesday | Friday | Announcements |
+|:-------|:----------|:-------|:--------------|
+| **11/17: Hypothesis testing details (single coefficient)** <br><br> _Before class:_ <br> - CP Quiz on Moodles| **11/19: Hypothesis testing details (single coefficient) + Hypothesis testing consideration (single coefficient)** | **11/21: Hypothesis testing consideration (single coefficient)** | - PP#7 is posted on the [Practice Problems](assignments.qmd) tab (due Friday, Nov 21 at 11:59pm CT)|
+:::
+
+::: {.callout-note collapse="true" title="Week 13"}
+| Monday | Wednesday | Friday | Announcements |
+|:-------|:----------|:-------|:--------------|
+| **11/24: Project Day** | **11/26: ThanksGiving** | **11/28: ThanksGiving** | - Project milestone 2 is due (on Moodle) Monday, Nov 24 at 11:59pm CT)|
+:::
+
+::: {.callout-note collapse="true" title="Week 14"}
+| Monday | Wednesday | Friday | Announcements |
+|:-------|:----------|:-------|:--------------|
+| **12/01: Hypothesis testing (F-test)** <br><br> _Before class:_ <br> - CP Quiz on Moodles| **12/03: Hypothesis testing (F-test) + P-values** | **12/05: P-values** | - PP#8 is posted on the [Practice Problems](assignments.qmd) tab (due Saturday, Dec 06 at 11:59pm CT)|
+:::
+
+::: {.callout-note collapse="true" title="Week 15"}
+| Monday | Wednesday | Friday | Announcements |
+|:-------|:----------|:-------|:--------------|
+| **12/08: Project Day** | **12/10: Project Day** | Study Day | - Project Final paper (.pdf and .qmd; one from each group) and Project reflection (each student) is due (on Moodle) Wednesday, Dec 10 at 11:59pm CT)|
+:::
