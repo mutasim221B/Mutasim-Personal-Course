@@ -3,8 +3,8 @@ title: ""
 sidebar: false
 ---
 
-# STAT 155: Introduction to Statistical Modeling  
-Macalester College, Fall 2025  
+# Introduction to Statistical Modeling  
+University of Kentucky, Spring 2026 
 
 Statistics is not just about theories & numbers — it’s about making sense of the world.  
 
@@ -16,22 +16,21 @@ Welcome to the world of Statistics! In this course, you’ll learn how to analyz
 
 **Instructor:** Md Mutasim Billah <br> **Class meeting times:**
 
--   **Section 03**: M/W/F 09:40-10:40am, THTR 002
--   **Section 04**: M/W/F 12:00-01:00pm, THTR 202
+-   **Section 03**: M/W/F 09:40-10:40am
+-   **Section 04**: M/W/F 12:00-01:00pm
 
 **Instructor's drop-in (office) hours:**
 
--   **Location:** My office (OLRI 234)
--   **Times:** M/W: 01:30-02:30 pm.
+-   **Location:** My office 
+-   **Times:** M/W/F: 01:30-02:30 pm.
 -   **By Appointment:** I'm also happy to meet one-on-one! Shoot me an email and we can arrange it either in-person or over [zoom](https://macalester.zoom.us/j/99762878654?pwd=gt7VvSNT0ubKsV2icMV3z8J0GyHKMy.1), password: 123456.
 -   **Email Response Time:** I do my best to reply to emails promptly during weekdays.  
-    Please note that messages sent after 4:00 pm or on weekends may take longer to receive a response.
+    Please note that messages sent after 5:00 pm or on weekends may take longer to receive a response.
 
 ------------------------------------------------------------------------
 
-[**STAT 155 Preceptor Office Hours:**]{.underline} There is a link to a Google Calendar containing *all* preceptor office hours available at the top of the course Moodle page!
+[**GTA Office Hours:**]{.underline} There is a link to a Google Calendar containing *all* GTA office hours available at the top of the course Canvas/Moodle page!
 
-[**R/RStudio Preceptor Office Hours:**]{.underline} Available on the [MSCS Events google calendar](https://www.macalester.edu/mscs/data-support/) (*not* to be used for questions about course content, only Data and R-related things!)
 
 
 

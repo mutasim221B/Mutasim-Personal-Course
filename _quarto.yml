@@ -10,14 +10,13 @@ project:
   resources:
     - "data/*.csv"
     # - "activity_templates/*.qmd"
-    - "assignments/*.qmd"
+    - "assignments/*.pdf"
     - .nojekyll
 
 website:
-  title: "STAT 155"
+  title: "STAT"
   site-url: https://mutasim221B.github.io/Mutasim-Personal-Course/
   repo-url:  https://github.com/mutasim221b/Mutasim-Personal-Course
-  favicon: favicon-32x32.png
   navbar:
     background: primary
     search: true
@@ -29,8 +28,10 @@ website:
       - file: schedule.qmd
         text: "Schedule"
       - sidebar:activities
-      - file: assignments.qmd
+      - file: pp.qmd
         text: "Practice Problems"
+      - file: assignments.qmd
+        text: "Homeworks"
       - file: project.qmd
         text: "Project"
       - file: R_Resources.qmd
@@ -40,7 +41,7 @@ website:
     - id: activities
       title: "Activities"
       contents:
-          - "activities/01_foundations_welcome.qmd"
+          - "activities/03_04-slr-intro-formalization.qmd"
 
 
   
