@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://mutasim221B.github.io/Mutasim-Personal-Course/template_qmds/04-slr-formalization-notes.html</loc>
-    <lastmod>2025-09-01T16:43:09.597Z</lastmod>
-  </url>
-  <url>
     <loc>https://mutasim221B.github.io/Mutasim-Personal-Course/syllabus.html</loc>
     <lastmod>2026-01-24T14:08:18.970Z</lastmod>
   </url>
@@ -17,16 +13,12 @@
     <lastmod>2026-01-24T11:19:07.424Z</lastmod>
   </url>
   <url>
-    <loc>https://mutasim221B.github.io/Mutasim-Personal-Course/activities/05-slr-model-eval.html</loc>
-    <lastmod>2025-09-12T14:00:30.623Z</lastmod>
+    <loc>https://mutasim221B.github.io/Mutasim-Personal-Course/activities/03_04-slr-intro-formalization.html</loc>
+    <lastmod>2026-01-25T17:40:05.548Z</lastmod>
   </url>
   <url>
     <loc>https://mutasim221B.github.io/Mutasim-Personal-Course/R_Resources.html</loc>
-    <lastmod>2026-01-24T14:14:15.473Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mutasim221B.github.io/Mutasim-Personal-Course/activities/03_04-slr-intro-formalization.html</loc>
-    <lastmod>2025-09-10T19:47:12.987Z</lastmod>
+    <lastmod>2026-01-24T15:36:30.738Z</lastmod>
   </url>
   <url>
     <loc>https://mutasim221B.github.io/Mutasim-Personal-Course/assignments.html</loc>
@@ -39,9 +31,5 @@
   <url>
     <loc>https://mutasim221B.github.io/Mutasim-Personal-Course/schedule.html</loc>
     <lastmod>2026-01-24T14:10:06.624Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mutasim221B.github.io/Mutasim-Personal-Course/template_qmds/03-slr-introduction-notes.html</loc>
-    <lastmod>2025-09-01T16:43:02.642Z</lastmod>
   </url>
 </urlset>

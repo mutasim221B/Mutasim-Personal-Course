@@ -11,6 +11,7 @@ project:
     - "data/*.csv"
     # - "activity_templates/*.qmd"
     - "assignments/*.pdf"
+    - "Resources/**"
     - .nojekyll
 
 website:
@@ -39,7 +40,7 @@ website:
 
   sidebar:
     - id: activities
-      title: "Activities"
+      title: "Class Reources"
       contents:
           - "activities/03_04-slr-intro-formalization.qmd"
 

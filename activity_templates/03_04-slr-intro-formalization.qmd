@@ -1,6 +1,6 @@
 ---
-title: "Simple Linear Regression - Intro+Formalization"
-subtitle: "Notes and in-class exercises"
+title: "Unit 03-01: Simple Linear Regression: Discovery"
+subtitle: "Class Resources"
 format: 
   html:
     embed-resources: true
@@ -24,8 +24,7 @@ knitr::opts_chunk$set(
 ```
 
 
-You can download the .qmd file for this activity [here](../activity_templates/03_04-slr-intro-formalization.qmd) and open in R-studio. The rendered version is posted in the [course website](https://mutasim221b.github.io/Mac-STAT-155-Fall-25/) (Activities tab). I often experiment with the class activities (and see it in live!) and make updates, but I always post the final version before class starts. To be sure you have the most up-to-date copy, please download it once you’ve settled in before class begins.
-
+Here you will find class resources for Unit 03-01: Simple Linear Regression: Discovery, rendered version of this is posted in the [course website](https://mutasim221b.github.io/Mac-STAT-155-Fall-25/) (Class Resources tab). You can also download the .qmd file [here](../activity_templates/03_04-slr-intro-formalization.qmd) and open in R-studio. 
 
 
 # Notes
@@ -35,12 +34,12 @@ You can download the .qmd file for this activity [here](../activity_templates/03
 By the end of this lesson, you should be able to:
 
 - Visualize and describe the relationship between two **quantitative** variables using a **scatterplot**
-- Write R code to create a scatterplot and compute the linear **correlation** between two quantitative variables
 - Describe/identify **weak** / **strong**, and **positive** / **negative** correlation from a point cloud
 - Build intuition for fitting **lines** to quantify the relationship between two quantitative variables
 - Differentiate between a **response** / **outcome variable** and a **predictor** / **explanatory variable**
-- Write a **model formula** for a simple linear regression model with a quantitative predictor
-- Write R code to fit a linear regression model
+- Understand the relation between the **scatterplot** and **correlation coefficient**.
+- Describe the strength and direction of the relationship between two quantitative variables using the correlation coefficient, including interpreting whether an association is weak or strong, and positive or negative.
+- Write a **model formula** for a simple linear regression model with a quantitative predictor.
 - Interpret the **intercept** and **slope** coefficients in a simple linear regression model with a quantitative predictor
 - Compute **expected / predicted / fitted values** and **residuals** from a linear regression model formula
 - Interpret predicted values and residuals in the context of the data
@@ -49,16 +48,22 @@ By the end of this lesson, you should be able to:
 
 ## Readings and videos
 
-Choose either the reading or the videos to go through **after** class. **CP Quiz due on Wednesday at 09:00 am** on these topics
+Choose either the reading or the videos (posted on Canvas/Moodle) to go through **before** class. **CP Quiz is due on Thursday, 01/29 at 08:00 am** on these topics.
 
-- Reading: Sections 2.8, 3.1-3.3, 3.6 in the [STAT 155 Notes](https://mac-stat.github.io/Stat155Notes/)
-- Videos:
-    - [Simple linear regression Part 1: motivation & scatterplots](https://youtu.be/ghweQRQE0yw)
-    - [Simple linear regression Part 2: correlation](https://youtu.be/S6sgLrROfNw)
-    - [Simple linear regression Part 3: simple linear regression models](https://youtu.be/cwxUNJUYKsA)
-    - [R Code for Fitting a Linear Model](https://voicethread.com/share/14928147/) (Time: 11:07)
 
-**File organization:** Save this file in the "Activities" subfolder of your "STAT155" folder.
+## Practice Problems
+
+Practice problems are essential for your understanding, practice, and exploration. I will post the practice problems for Unit 03 after class (please look for my email!).
+
+
+
+# Resources
+
+## Handouts & Activities
+
+- Download the Unit 03-01 handouts from here.
+- Fun [Regression by eye](/Resources/regression-by-eye.ppt) activity!
+
 
 # Exercises
 
@@ -105,6 +110,10 @@ The html has saved in the same location (folder) where you initially saved the .
 :::
 
 c. Now, click on the **+C** at the top right side of RStudio and then choose **R**. What happens?
+
+```{r}
+
+```
 
 ::: {.callout-tip title="Answers"}
 It creates code chunks
@@ -156,16 +165,22 @@ d. Compute Correlation of temp_feel and riders_registered.
 
 We can quantify the **linear** relationship between two quantitative variables using a numerical summary known as **correlation** (sometimes known as a "correlation coefficient" or "Pearson's correlation"). Correlation can range from -1 to 1, where a correlation of 0 indicates that there is *no* linear relationship between the two quantitative variables. 
 
-Below is an example of a "Math Box". You'll see these occasionally throughout the activities. You are *not* required to memorize, nor will you be assessed on, anything in the math boxes. If you plan on *continuing* with Statistics courses at Macalester (or are interested in the math behind everything!), these math boxes are for you!
+Below is an example of a "Math Box". You'll see these occasionally throughout the activities. You are *not* required to memorize (if in the quiz, formula will be provided!), anything in the math boxes. If you plan on *continuing* with Statistics courses (or are interested in the math behind everything!), these math boxes are for you!
 
 ::: {.callout-note collapse="true"}
 ## Correlation
-
-The Pearson correlation coefficient, $r_{x, y}$, of $x$ and $y$ is the (almost) **average** of products of the z-scores of variables $x$ and $y$:
+The Pearson correlation coefficient, $r_{x,y}$, can be written in terms of sums of squares and cross-products as:
 
 $$
-r_{x, y} = \frac{\sum z_x z_y}{n - 1}
+r = \frac{SS_{xy}}{\sqrt{SS_{xx}} \, \sqrt{SS_{yy}}} = \frac{\sum z_x z_y}{n - 1}
 $$
+Where, 
+$$
+SS_{xx} = \sum x^2 - \frac{(\sum x)^2}{n} \newline
+SS_{yy} = \sum y^2 - \frac{(\sum y)^2}{n} \newline
+SS_{xy} = \sum xy - \frac{(\sum x)(\sum y)}{n}
+$$
+
 :::
 
 In general, we will want to be able to describe (qualitatively) two aspects of correlation:
@@ -178,7 +193,13 @@ In general, we will want to be able to describe (qualitatively) two aspects of c
 
 Stronger correlations will be *further* from 0 (closer to -1 or 1), and *positive* and *negative* correlations will have the appropriate respective sign (above or below zero).
 
-**Whiteboard Time (a little-bit!)**
+
+
+
+
+
+
+
 
 
 
