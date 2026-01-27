@@ -89,23 +89,12 @@ In hiring preceptors, we prioritize and emphasize kindness and respect. I expect
 
 <br><br><br><br>
 
-# Topics and Tentative Schedule
-
-| UNIT                       | GOAL                                                                                                 | TOPICS                                                                                                                                                                                                                                               | ~WEEKS |
-|---------------------------|------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------|
-| Simple linear regression  | Model the relationship of a quantitative response (y) with one predictor/explanatory variable (x).  | Univariate visual & numerical summaries<br>Simple linear regression<br>&nbsp;&nbsp;&nbsp; Bivariate visualization<br>&nbsp;&nbsp;&nbsp; Model coefficients<br>&nbsp;&nbsp;&nbsp; Predictions & residuals<br> Model evaluation<br>&nbsp;&nbsp;&nbsp; Model assumptions<br>&nbsp;&nbsp;&nbsp; $R^2$<br>&nbsp;&nbsp;&nbsp; Bias / ethics / fairness<br>Transformations<br>Categorical predictors | 1–3   |
-| Multiple linear regression| Model the relationship of a quantitative response (y) with multiple predictors (x₁, x₂, …, xₚ).     | Multiple linear regression<br>&nbsp;&nbsp;&nbsp; Multivariate visualization<br>&nbsp;&nbsp;&nbsp; Model coefficients<br>&nbsp;&nbsp;&nbsp; Predictions & residuals<br>Confounding & interaction<br>Model building                                                                                             | 4–7   |
-| Logistic regression       | Model the relationship of a binary categorical response (y) with one or more predictors (x₁, x₂, …, xₚ). | Measuring uncertainty<br>&nbsp;&nbsp;&nbsp; log(odds) vs odds vs probability<br>Logistic regression<br>&nbsp;&nbsp;&nbsp; Visualization<br>&nbsp;&nbsp;&nbsp; Model coefficients<br>&nbsp;&nbsp;&nbsp; Predictions & residuals<br>Model evaluation<br>&nbsp;&nbsp;&nbsp; Accuracy, sensitivity, specificity<br>&nbsp;&nbsp;&nbsp; Confusion matrices                     | 8–9   |
-| Inference                 | Use regression models built on sample data to make inferences about the broader population.          | Normal distribution<br>Sampling distributions & the CLT<br>Confidence intervals<br>Hypothesis tests                                                                                                                                                   | 10–14 |
-
-<br><br><br><br>
-
 # Course resources
 
 ## Online Course Manual
 
 
-The [online course manual](https://mutasim221b.github.io/Mac-STAT-155-Fall-25/) includes all in-class activities (with solutions) and a daily [Schedule](schedule.qmd). All links and materials needed will be provided on the schedule tab of this website.
+The [online course website](https://mutasim221b.github.io/Mutasim-Personal-Course/) includes all in-class activities/handouts and a daily [Schedule](schedule.qmd). All links and materials needed will be provided on the schedule tab of this website.
 
 ## Canvas/Moodle
 Canvas/Moodle includes general resources, a broad course calendar, submission links, feedback, and a forum for student questions.
@@ -267,16 +256,16 @@ Collaboration improves higher-level thinking, confidence, communication, communi
 
 ## (3) Preparation (Checkpoints) 
 
-Before class you will watch videos which introduce new concepts, then take a low-stakes checkpoint quiz (CP). This will help us prepare for class, build a common foundation, & maximize our time together – just how readings & reading reflections might be used in another class!
+For some topics, before class you will watch videos which introduce new concepts, then take a low-stakes checkpoint quiz (CP). This will help us prepare for class in those topics, build a common foundation, & maximize our time together – just how readings & reading reflections might be used in another class!
 
 ::: {.callout-important title="📊 Expectations"}
-Complete at least 13 (out of 17) CPs (≈80%) without affecting your final grades!
+Complete at least 5 (out of 7) CPs without affecting your final grades!
 :::
 
 ::: {.callout-note title="📜 Policies"}
   - CPs may be attempted as many times as you’d like, but to earn completion credit for a given checkpoint you must score 100% by your final attempt.
-  - If you complete less than 13 (out of 17) CPs (≈80%) before the time they are due, your overall course grade will be lowered by 1/3 of a letter grade (i.e. B –> B-, A- –> B+, etc.).
-    - If you complete less than 8 (out of 17) CPs (≈50%) before the time they are due, your overall course grade will be lowered by 1 of a letter grade (i.e. A –> B, etc.).
+  - If you complete less than 5 (out of 7) CPs (≈80%) before the time they are due, your overall course grade will be lowered by 1/3 of a letter grade (i.e. B –> B-, A- –> B+, etc.).
+    - If you complete less than 3 (out of 7) CPs (≈50%) before the time they are due, your overall course grade will be lowered by 1 of a letter grade (i.e. A –> B, etc.).
   
 
 - CPs are due **09:00am** on the assigned date. **There are no extensions for CPs**, as they are important *preparation* for the relevant class session.  
@@ -382,8 +371,8 @@ Preparation (checkpoints)
 | Modifier                          | Scenario                                                                 |
 |:----------------------------------|:-------------------------------------------------------------------------|
 | none <br>(e.g. A → A)            | Meets expectations in all two areas (Engagement and Preparation) |
-| ⅓ lower grade <br>(e.g. A → A-)  | Demonstrates strong progress (e.g., 4 absences OR less than 13 (out of 17) CPs (≈80%))  |
-| 1 lower grade <br>(e.g. A → B)   | Demonstrates moderate progress (e.g., 5–6 absences OR less than 8 (out of 17) CPs (≈50%)) |
+| ⅓ lower grade <br>(e.g. A → A-)  | Demonstrates strong progress (e.g., 4 absences OR less than 5 (out of 7) CPs)  |
+| 1 lower grade <br>(e.g. A → B)   | Demonstrates moderate progress (e.g., 5–6 absences OR less than 3 (out of 5) CPs) |
 | >1 lower grade                   | Demonstrates little progress toward expectations in two areas          |
 | Drop to D                        | Has 7+ absences                                                          |
 
