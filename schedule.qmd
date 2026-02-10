@@ -14,5 +14,5 @@ The (tentative) course schedule below will be filled in throughout the semester.
 ::: {.callout-note collapse="true" title="Week 2"}
 | Monday         | Wednesday | Friday | Announcements |
 |:---------------|:----------|:-------|:--------------|
-| **02/09: Unit 02: Descriptive Statistics** | **02/11: Descriptive Statistics + Unit 03: Simple Linear Regresion** | **02/12: Unit 03: Simple Linear Regresion**| - HW#1 is posted on the [Homeworks](assignments.qmd) tab (due Monday, Feb 09, in class) |
+| **02/09: Unit 02: Descriptive Statistics** | **02/11: Descriptive Statistics + Unit 03: Simple Linear Regresion** | **02/12: Unit 03: Simple Linear Regresion**| - HW#1 is posted on the [Homeworks](assignments.qmd) tab (due Monday, Feb 16, in class) |
 ::: 
