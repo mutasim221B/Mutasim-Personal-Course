@@ -24,7 +24,7 @@ knitr::opts_chunk$set(
 ```
 
 
-Here you will find class resources for Unit 03-01: Simple Linear Regression: Discovery & Model, rendered version of this is posted in the [course website](https://mutasim221b.github.io/Mutasim-Personal-Course/) (Class Resources tab). You can also download the .qmd file [here](../activity_templates/03_04-slr-intro-formalization.qmd) and open in R-studio. 
+Here you will find class resources for Unit 03-01: Simple Linear Regression: Discovery & Model, rendered version of this is posted in the [course website](https://mutasim221b.github.io/Mutasim-Personal-Course/) (Class Resources tab). You can also download the .qmd file [here](../activity_templates/03_01-slr-discovery-model.qmd) and open in R-studio. 
 
 
 # Notes
@@ -37,7 +37,7 @@ By the end of this lesson, you should be able to:
 - Describe/identify **weak**/**strong**, and **positive**/**negative** correlation from a point cloud
 - Build intuition for fitting **lines** to quantify the relationship between two quantitative variables
 - Differentiate between a **response**/**dependent variable** and a **independent**/**explanatory variable**
-- Understand the relation between the **scatterplot** and **correlation coefficient**.
+- Understand the relation between the **scatterplot** and **correlation**.
 - Describe the strength and direction of the **linear** relationship between two quantitative variables using the correlation coefficient, including interpreting whether an association is weak or strong, and positive or negative.
 - Write a **model formula** for a simple linear regression model with a quantitative predictor.
 - Interpret the estimated **intercept** and **slope** coefficients in a simple linear regression model with a quantitative predictor

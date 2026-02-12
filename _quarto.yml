@@ -42,7 +42,7 @@ website:
     - id: activities
       title: "Class Reources"
       contents:
-          - "activities/03_04-slr-intro-formalization.qmd"
+          - "activities/03_01-slr-discovery-model.qmd"
 
 
   

@@ -196,8 +196,8 @@
     "text": "Introduction to Statistical Modeling\nUniversity of Kentucky, Spring 2026\nStatistics is not just about theories & numbers — it’s about making sense of the world.\n\n\n\n\n\n\n📖 A Thought from H. G. Wells\n\n\n\n\n“Statistical thinking will one day be as necessary for efficient citizenship as the ability to read and write.”\n\n\n\nWelcome to the world of Statistics! In this course, you’ll learn how to analyze data, test research hypotheses, and make predictions in ways that matter.\nInstructor: Md Mutasim Billah  Class meeting times:\n\nSection 03: M/W/F 09:40-10:40am\nSection 04: M/W/F 12:00-01:00pm\n\nInstructor’s drop-in (office) hours:\n\nLocation: My office\nTimes: M/W/F: 01:30-02:30 pm.\nBy Appointment: I’m also happy to meet one-on-one! Shoot me an email and we can arrange it either in-person or over zoom, password: 123456.\nEmail Response Time: I do my best to reply to emails promptly during weekdays.\nPlease note that messages sent after 5:00 pm or on weekends may take longer to receive a response.\n\n\nGTA Office Hours: There is a link to a Google Calendar containing all GTA office hours available at the top of the course Canvas/Moodle page!\n\nThis course website will be updated throughout the semester with new activities, assignments, and announcements, so please bookmark this page if you are enrolled in the course!\nIf you find any typos, bugs, dead links, or have other questions, please email mbillah@macalester.edu"
   },
   {
-    "objectID": "activities/03_04-slr-intro-formalization.html",
-    "href": "activities/03_04-slr-intro-formalization.html",
+    "objectID": "activities/03_01-slr-discovery-model.html",
+    "href": "activities/03_01-slr-discovery-model.html",
     "title": "Unit 03-01: Simple Linear Regression: Discovery & Model",
     "section": "",
     "text": "Here you will find class resources for Unit 03-01: Simple Linear Regression: Discovery & Model, rendered version of this is posted in the course website (Class Resources tab). You can also download the .qmd file here and open in R-studio.",
@@ -206,18 +206,18 @@
     ]
   },
   {
-    "objectID": "activities/03_04-slr-intro-formalization.html#learning-goals",
-    "href": "activities/03_04-slr-intro-formalization.html#learning-goals",
+    "objectID": "activities/03_01-slr-discovery-model.html#learning-goals",
+    "href": "activities/03_01-slr-discovery-model.html#learning-goals",
     "title": "Unit 03-01: Simple Linear Regression: Discovery & Model",
     "section": "Learning goals",
-    "text": "Learning goals\nBy the end of this lesson, you should be able to:\n\nVisualize and describe the relationship between two quantitative variables using a scatterplot\nDescribe/identify weak/strong, and positive/negative correlation from a point cloud\nBuild intuition for fitting lines to quantify the relationship between two quantitative variables\nDifferentiate between a response/dependent variable and a independent/explanatory variable\nUnderstand the relation between the scatterplot and correlation coefficient.\nDescribe the strength and direction of the linear relationship between two quantitative variables using the correlation coefficient, including interpreting whether an association is weak or strong, and positive or negative.\nWrite a model formula for a simple linear regression model with a quantitative predictor.\nInterpret the estimated intercept and slope coefficients in a simple linear regression model with a quantitative predictor\nCompute predicted/fitted values from a linear regression model formula\nInterpret predicted values in the context of the data",
+    "text": "Learning goals\nBy the end of this lesson, you should be able to:\n\nVisualize and describe the relationship between two quantitative variables using a scatterplot\nDescribe/identify weak/strong, and positive/negative correlation from a point cloud\nBuild intuition for fitting lines to quantify the relationship between two quantitative variables\nDifferentiate between a response/dependent variable and a independent/explanatory variable\nUnderstand the relation between the scatterplot and correlation.\nDescribe the strength and direction of the linear relationship between two quantitative variables using the correlation coefficient, including interpreting whether an association is weak or strong, and positive or negative.\nWrite a model formula for a simple linear regression model with a quantitative predictor.\nInterpret the estimated intercept and slope coefficients in a simple linear regression model with a quantitative predictor\nCompute predicted/fitted values from a linear regression model formula\nInterpret predicted values in the context of the data",
     "crumbs": [
       "Unit 03-01: Simple Linear Regression: Discovery & Model"
     ]
   },
   {
-    "objectID": "activities/03_04-slr-intro-formalization.html#practice-problems",
-    "href": "activities/03_04-slr-intro-formalization.html#practice-problems",
+    "objectID": "activities/03_01-slr-discovery-model.html#practice-problems",
+    "href": "activities/03_01-slr-discovery-model.html#practice-problems",
     "title": "Unit 03-01: Simple Linear Regression: Discovery & Model",
     "section": "Practice Problems",
     "text": "Practice Problems\nPractice problems are essential for your understanding, practice, and exploration. I will post the practice problems for Unit 03 after class (please look for my email!).",
@@ -226,8 +226,8 @@
     ]
   },
   {
-    "objectID": "activities/03_04-slr-intro-formalization.html#handouts-activities",
-    "href": "activities/03_04-slr-intro-formalization.html#handouts-activities",
+    "objectID": "activities/03_01-slr-discovery-model.html#handouts-activities",
+    "href": "activities/03_01-slr-discovery-model.html#handouts-activities",
     "title": "Unit 03-01: Simple Linear Regression: Discovery & Model",
     "section": "Handouts & Activities",
     "text": "Handouts & Activities\n\nDownload the Unit 03-01 handouts from here.\nFun Regression by eye activity!",
